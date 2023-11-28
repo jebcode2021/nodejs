@@ -9,7 +9,6 @@
     "cpf": 1234567890,
     "endereco": "Rua Frida Weber",
     "numero": 143,
-    "completo": "AP 21",
     "bairro": "Cruzeiro",
     "cidade": "São Bento do Sul",
     "estado": "SC",
@@ -17,7 +16,8 @@
     "celular": "(48) 9 9692-1877",
     "email": "programado@jebcode.com.br",
     "data_nascimento": "18/03/1996",
-    "sexo": "Masculino"
+    "sexo": "Masculino",
+    "complemento": "AP 21"
   },
   "curso": [
     {
