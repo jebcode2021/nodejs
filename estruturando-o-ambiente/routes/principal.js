@@ -3,7 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (_, res) => {
-    res.send('Olá, mundo!');	
+    res.render('template', {
+        nomeDoUsuario: 'Jonathan Euzébio Boza',
+    });
 }); 
 
 module.exports = router;

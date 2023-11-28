@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "6565b6c705f3feae235b1ec4"
+  },
+  "cliente": {
+    "nome": "Jonathan",
+    "sobrenome": "Euzébio Boza"
+  },
+  "pizzas": [
+    {
+      "sabor": "Marguerita",
+      "quantidade": 1,
+      "tamanho": "Grande"
+    },
+    {
+      "sabor": "Portugûes",
+      "quantidade": 2,
+      "tamanho": "Grande"
+    }
+  ],
+  "metodoDePagamento": "Cartão de Crédito",
+  "total": 90.23,
+  "pago": false
+},
+{
+  "_id": {
+    "$oid": "6565b95305f3feae235b1ec5"
+  },
+  "cliente": {
+    "nome": "Denise",
+    "sobrenome": "Machado Boza"
+  },
+  "pizzas": [
+    {
+      "sabor": "Frango",
+      "quantidade": 1,
+      "tamanho": "Pequeno"
+    }
+  ],
+  "metodoDePagamento": "Pix",
+  "total": 50,
+  "pago": false
+}]

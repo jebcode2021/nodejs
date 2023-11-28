@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "6566093505f3feae235b1ee1"
+  },
+  "cliente": {
+    "nome": "Jonathan",
+    "sobrenome": "Euzébio Boza",
+    "idade": 27,
+    "cpf": 1234567890,
+    "endereco": "Rua Frida Weber",
+    "numero": 143,
+    "completo": "AP 21",
+    "bairro": "Cruzeiro",
+    "cidade": "São Bento do Sul",
+    "estado": "SC",
+    "cep": "89286-205",
+    "celular": "(48) 9 9692-1877",
+    "email": "programado@jebcode.com.br",
+    "data_nascimento": "18/03/1996",
+    "sexo": "Masculino"
+  },
+  "curso": [
+    {
+      "titulo": "Curso de Node.js",
+      "valor": 4000
+    },
+    {
+      "titulo": "Profissão: Especialista Back-End Java",
+      "valor": 9000
+    }
+  ],
+  "metodoDePagamento": "Pix",
+  "total": 13000,
+  "parcelas": 5,
+  "status": "Aguardando Pagamento",
+  "pago": false,
+  "data_matricula": "28/11/2023",
+  "valor_parcela": 1.305
+}]

@@ -3,6 +3,7 @@ const path = require('path');
 
 const routerPrincipal = require('./routes/principal');
 const routerPedidos = require('./routes/pedidos');
+const routerPerfils = require('./routes/perfils'); // rota perfil
 const { connect } = require('./models');
 
 const app = express();
@@ -13,6 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // routes
+app.use('/perfils', routerPerfils); // define a rota /perfils
 app.use('/pedidos', routerPedidos);
 app.use('/', routerPrincipal);
 

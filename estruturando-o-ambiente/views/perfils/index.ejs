@@ -1,0 +1,47 @@
+
+
+
+<ul>
+    <h1>Meu perfil - <%= nomeDoUsuario %></h1>
+    <% perfils.map((perfil) => { %>
+        <li>Nome completo: <%= perfil.cliente.nome %> <%= perfil.cliente.sobrenome %></li>
+        <li>Sexo: <%= perfil.cliente.sexo %></li>
+        <li>Idade: <%= perfil.cliente.idade %></li>
+        <li>CPF: <%= perfil.cliente.cpf %></li>
+        <li>Endereço: <%= perfil.cliente.endereco %></li>
+        <li>N° Casa: <%= perfil.cliente.numero %></li>
+        <li>Complemento: <%= perfil.cliente.complemento %></li>
+        <li>Bairro: <%= perfil.cliente.bairro %></li>
+        <li>Cidade: <%= perfil.cliente.cidade %></li>
+        <li>Estado: <%= perfil.cliente.estado %></li>
+        <li>CEP: <%= perfil.cliente.cep %></li>
+        <li>Celular: <%= perfil.cliente.celular %></li>
+        <li>Email: <%= perfil.cliente.email %></li>
+        <li>Data de Nascimento: <%= perfil.cliente.data_nascimento %></li> </br>
+        
+        <% if(perfils.length > 0){ %> <% perfils.forEach(perfil => { %>
+
+
+        <h1>Meus cursos</h1>
+        <% perfil.curso.forEach(curso => { %>
+            <li>Cursos: <%= curso.titulo %></li>
+            <li>Valor: <%= curso.valor %></li>
+        <% }) %>
+    </br>
+
+        <% }) %> 
+        
+        <% } else { %> 
+
+        <li>Não há cursos matriculados</li>
+        
+        <% } %> 
+
+        <li>Total: <%= perfil.total %></li>
+        <li>Parcelas: <%= perfil.parcelas %> x de <%= perfil.valor_parcela %></li>
+        <li>Pago: <%= perfil.pago %></li>
+        <li>Status: <%= perfil.status %></li>
+        <li>Data de Matricula: <%= perfil.data_matricula %></li>
+
+        <% }) %>
+</ul>
