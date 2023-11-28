@@ -1,9 +1,6 @@
-
-
-
 <ul>
-    <h1>Meu perfil - <%= nomeDoUsuario %></h1>
-    <% perfils.map((perfil) => { %>
+        <h1>Meu perfil - <%= nomeDoUsuario %></h1>
+        <% perfils.map((perfil) => { %>
         <li>Nome completo: <%= perfil.cliente.nome %> <%= perfil.cliente.sobrenome %></li>
         <li>Sexo: <%= perfil.cliente.sexo %></li>
         <li>Idade: <%= perfil.cliente.idade %></li>
@@ -28,7 +25,8 @@
             <li>Valor: <%= curso.valor %></li>
             <li>-----------------------------</li>
         <% }) %>
-    </br>
+
+        </br>
 
         <% }) %> 
         
@@ -43,6 +41,5 @@
         <li>Pago: <%= perfil.pago %></li>
         <li>Status: <%= perfil.status %></li>
         <li>Data de Matricula: <%= perfil.data_matricula %></li>
-
         <% }) %>
 </ul>
